@@ -1,0 +1,9 @@
+<div>
+  <p>Ten nguoi dung: {{ username }}</p>
+  <p>Level: {{ level }}</p>
+</div>
+<h3>So luong san pham: {{ itemCount }} <span *ngIf="itemCount % 2 == 0">la so chan</span></h3>
+<ul>
+  <li *ngFor="let product of filteredProducts">{{ product.name }}</li>
+</ul>
+

@@ -1,0 +1,14 @@
+<button class="btn btn-primary">Bootstrap Button</button>
+<a routerLink="create">aaa</a>
+<app-item [username]="username" [products]="data" [level]="level"></app-item>
+
+<button class="btn btn-primary" (click)="update()">Update data</button>
+<button class="btn btn-primary" (click)="push()">push data</button>
+
+<div *ngIf="open">
+
+<app-display open="open"></app-display>
+</div>
+<div>
+<button class="btn btn-primary" (click)="show()">show data</button>
+</div>

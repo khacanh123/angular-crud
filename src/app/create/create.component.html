@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="col-8">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of listUser">
+          <td>{{ data.firstName }}</td>
+          <td>{{ data.lastName }}</td>
+          <td>{{ data.email }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-sm-4">
+    <div>
+      <label for="">First name</label>
+      <input type="text" [(ngModel)]="firstName" class="form-control">
+    </div>
+    <div>
+      <label for="">Last name</label>
+      <input type="text" [(ngModel)]="lastName" class="form-control">
+    </div>
+    <div>
+      <label for="">Email</label>
+      <input type="text" [(ngModel)]="email" class="form-control">
+    </div>
+    <div class="text-center">
+      <button (click)="add()">Add</button>
+    </div>
+  </div>
+</div>
+<h3 class="font-bold">TailwindCSS</h3>
